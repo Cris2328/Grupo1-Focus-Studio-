@@ -61,6 +61,7 @@ Las funcionalidades se considerarán completadas una vez que hayan sido desarrol
 
 **Historias correspondientes al Avance 2.**
 
+
 | ID | Funcionalidad |
 |---|---|
 | HU-06 | Confirmación de reservaciones |
@@ -129,3 +130,75 @@ Las actividades principales incluyen:
 **Entrega:** Avance 2
 
 **Historias de usuario del avance:** HU-01 a HU-10
+
+🛠️ Requisitos e instalación
+
+Para ejecutar Focus Studio en un entorno local, se necesitan las siguientes herramientas:
+
+Java JDK 21.
+
+Apache Maven.
+
+MySQL Server.
+
+MySQL Workbench (recomendado).
+
+NetBeans IDE (recomendado).
+
+Configuración de la base de datos
+
+El proyecto utiliza una base de datos MySQL llamada focus_studio.
+
+Iniciar el servidor MySQL.
+
+Configurar las credenciales de conexión en src/main/resources/application.properties o mediante las variables de entorno DB_URL, DB_USER y DB_PASSWORD.
+
+Ejecutar el proyecto para que Hibernate genere o actualice las tablas correspondientes, según la configuración de JPA.
+
+Ejecutar en MySQL Workbench el script database/configuracion_reservaciones.sql, que crea y configura la tabla de control utilizada durante el registro de reservaciones.
+
+Opcionalmente, se puede ejecutar database/horarios_ejemplo.sql para cargar horarios de prueba.
+
+Ejecución de la aplicación
+
+Clonar el repositorio de GitHub.
+
+Abrir el proyecto Maven en NetBeans.
+
+Verificar que MySQL esté funcionando.
+
+Ejecutar el objetivo Maven spring-boot:run.
+
+Abrir el navegador e ingresar a:
+
+http://localhost:8081
+
+Rutas principales
+
+Ruta
+
+Funcionalidad
+
+/portafolio
+
+Visualización del portafolio y filtros por categoría
+
+/servicios
+
+Consulta de servicios fotográficos
+
+/disponibilidad
+
+Consulta de fechas y horarios disponibles
+
+/reservaciones/nueva
+
+Formulario de reservación, con los parámetros del servicio y horario seleccionado
+
+Flujo de reservación
+
+El cliente consulta los servicios fotográficos, selecciona una fecha y un horario disponible y completa el formulario de reservación.
+
+Antes de guardar la reservación, el sistema verifica nuevamente la disponibilidad para evitar conflictos con horarios bloqueados o reservaciones existentes.
+
+Una vez registrada correctamente, el sistema genera un código de confirmación y muestra los detalles de la sesión reservada.
