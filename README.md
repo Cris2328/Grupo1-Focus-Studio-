@@ -1,4 +1,14 @@
 # 📸 Grupo 1 — Focus Studio
+
+| N.º | Nombre completo |
+|---|---|
+| 1 | Nicole Gómez Sánchez |
+| 2 | Cristel Vásquez Campos |
+| 3 | Edwin Clarke Espinoza |
+| 4 | Ashell Reyes Rocha |
+
+
+**Entrega:** Avance 2
 ## 📋 Descripción del proyecto
 
 **Focus Studio** es una aplicación web orientada a la gestión de servicios profesionales de fotografía y video. Su propósito es facilitar a los clientes la consulta de paquetes fotográficos, visualización de portafolios, disponibilidad de horarios y reservación de sesiones.
