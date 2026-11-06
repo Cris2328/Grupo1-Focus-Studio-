@@ -2,9 +2,9 @@
 
 El proyecto es desarrollado por los siguientes integrantes: 
 
-Nicole Gómez Sánchez
-Cristel Vásquez Campos
-Edwin Clarke Espinoza
+Nicole Gómez Sánchez,
+Cristel Vásquez Campos,
+Edwin Clarke Espinoza,
 Ashell Reyes Rocha
 
 ## 📋 Descripción del proyecto
